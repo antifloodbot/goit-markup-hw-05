@@ -22,7 +22,6 @@
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
   <body>
     <!-- #region Header -->
     <header class="page-header">
@@ -64,7 +63,11 @@
           <h1 class="first-section-header">
             Effective Solutions for Your Business
           </h1>
-          <button class="first-section-order-button" type="button">
+          <button
+            class="first-section-order-button"
+            type="button"
+            data-modal-open
+          >
             Order Service
           </button>
         </div>
@@ -482,5 +485,15 @@
       </div>
     </footer>
     <!-- #endregion -->
+    <!--#region Modal -->
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button class="modal-close-btn" type="button" data-modal-close>
+          close
+        </button>
+      </div>
+    </div>
+    <!-- #endregion -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
